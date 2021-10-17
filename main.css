@@ -15,7 +15,7 @@ main {
 
 html {
   font-family: 'Roboto mono';
-  background: #00212b;
+  background: black;
 }
 
 h1 {
@@ -48,8 +48,17 @@ header a {
   color: white;
 }
 
+.nav {
+  position: fixed;
+  right: 1rem;
+  z-index: 2;
+}
+
 footer {
   background: white;
+  position: relative;
+  z-index: 0;
+  top: 210%;
 }
 
 footer p {
@@ -70,13 +79,14 @@ figure {
 }
 
 .title {
-  height: 1000%;
   z-index: -1;
+  position: fixed;
+  top: 40%;
+  left: 25%;
 }
 
 .navFooter {
   background: black;
-  position: relative;
   top: 5.1rem;
 }
 
@@ -94,12 +104,20 @@ figure {
   padding-right: 2rem;
 }
 
+.divFooter {
+  z-index: 2;
+}
+
 .btnEnter {
   position: absolute;
   top: 43%;
   right: 38%;
   width: 10rem;
   height: 10rem;
+}
+
+.enter {
+  z-index: 0;
 }
 
 .h1Enter {
@@ -115,6 +133,7 @@ figure {
   top: 0;
   right: 0;
   left: 0%;
+  z-index: 1;
 }
 
 .containerD {
@@ -124,6 +143,7 @@ figure {
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: 1;
 }
 
 .dev {
@@ -131,10 +151,50 @@ figure {
   place-items: center;
   margin-top: 0;
   border-radius: 1rem;
-  position: absolute;
+  position: fixed;
   background: white;
   right: 18%;
   top: 1.5rem;
+}
+
+.sectionWhite h1 {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color: black;
+  width: 50rem;
+}
+
+.sectionWhite h2 {
+  position: absolute;
+  font-size: 5rem;
+  top: 60%;
+  left: 55%;
+}
+
+.content {
+  top: 0;
+  right: 0;
+  height: 110%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.portofolio {
+  display: grid;
+  place-items: center;
+  position: relative;
+  top: 20%;
+}
+
+.fig1, .fig2, .fig3, .fig4, .fig5, .fig6 {
+  background: white;
+  margin: 1rem 10rem;
+}
+
+.fig1 img, .fig2 img, .fig3 img, .fig4 img, .fig5 img, .fig6 img {
+  height: 10rem;
 }
 
 .flex {
@@ -153,10 +213,11 @@ figure {
   justify-content: space-around;
 }
 
-#imgTest img, #imgTest1 img, #imgLogo img {
+#imgLogo img {
   padding-top: .5rem;
   width: 8rem;
   height: 8rem;
+  position: fixed;
 }
 
 
